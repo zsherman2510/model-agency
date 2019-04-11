@@ -1,0 +1,36 @@
+.header {
+  height: 100vh;
+  position: relative;
+  background: #eee;
+
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .background {
+      position: absolute;
+      left: auto;
+      top: 20;
+      display: flex;
+      height: 640px;
+
+      justify-content: center;
+      background: #eee;
+      z-index: 1;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .title {
+      position: relative;
+      font-size: 4rem;
+      display: flex;
+      justify-content: center;
+      z-index: 100;
+      color: rgb(228, 184, 41);
+      text-transform: uppercase;
+    }
+  }
+}

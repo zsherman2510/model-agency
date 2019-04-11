@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import { Button } from "react-bootstrap";
-
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import data from "../data";
 class App extends Component {
   render() {
     return (
-      <div>
-        <Button>Button</Button>
-      </div>
+      <>
+        <Header data={data} />
+        <Footer data={data} />
+      </>
     );
   }
 }
