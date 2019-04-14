@@ -7,7 +7,7 @@ const Header = ({ data }) => {
       <section className="header">
         <div className="section">
           <img className="background" src={HeaderImg} alt="header" />
-          <span className="title">Execute Your Dreams</span>
+          <span className="title">Execute.</span>
         </div>
       </section>
     </>

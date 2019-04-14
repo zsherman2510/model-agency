@@ -12,10 +12,12 @@
     .background {
       position: absolute;
       left: auto;
-      top: 20;
+      top: 15;
       display: flex;
-      height: 640px;
-
+      height: 45%;
+      width: 35%;
+      min-width: 300px;
+      min-height: 420px;
       justify-content: center;
       background: #eee;
       z-index: 1;
@@ -28,6 +30,8 @@
       font-size: 4rem;
       display: flex;
       justify-content: center;
+      align-items: center;
+      text-align: center;
       z-index: 100;
       color: rgb(228, 184, 41);
       text-transform: uppercase;
