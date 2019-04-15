@@ -133,7 +133,40 @@ let data = {
       bottomText:
         "Inclusiveness, diversity, purpose and authenticity are beliefs that drive us to go beyond mere appearances. Based in California, Execute represents inspiring people."
     }
-  ]
+  ],
+  agency: {
+    img: "https://humankind.imgix.net/HM_About_agency.jpg",
+    title: "The Agency",
+    topText:
+      " OF COMBINED EXPERIENCE IN THE FASHION INDUSTRY HAS GIFTED HUMANKIND WITH INSIGHTS AND A SINGULAR PERSPECTIVE. IT HAS ALSO MADE US WANT TO GIVE BACK.",
+    bottomText:
+      "In this business, new recruits are too often left to their own devices. That’s why Humankind offers mentorship and health coaching. We firmly believe that greater involvement from agents can contribute to making this community a better and happier place for all of Humankind. Claudine and Marikym, the founders of Humankind, started out as models. Today, health coach, actress and agent, they bring a personalized approach to talent management."
+  },
+  nutrition: {
+    topText:
+      "At the very heart our philosophy lies the importance of health and nutrition. We provide certified nutritional and health consultations to each member of our family.",
+    middleText:
+      "PROMOTING HEALTHY HABITS PAVES THE WAY FOR LONG LASTING CAREERS IN THE INDUSTRY.",
+    bottomText:
+      "Humankind wants to make a difference, inspire change and impact our community.",
+    img: "https://humankind.imgix.net/HM_About_nutrition_new_2.jpg"
+  },
+  mentorship: {
+    topText:
+      "At Execute, we pair new recruits with more established professionals to help them gain confidence in their craft.",
+    middleText:
+      "THIS UNIQUE PARTNERSHIP CREATES A SOLID FAMILY BOND AND A WARM SENSE OF BELONGING.",
+    bottomText: "We value the power of experience and support.",
+    img: "https://humankind.imgix.net/HM_About_shadowing.jpg"
+  },
+  workshops: {
+    img:
+      "https://upload.wikimedia.org/wikipedia/commons/f/fb/ModelsCatwalk.jpg",
+    topText:
+      "WHETHER YOU ARE AN ARTIST OR A MODEL, HUMANKIND HAS GOT YOU COVERED WITH ACTING CLASSES TO PERFECT YOUR SKILL SET.",
+    bottomText:
+      "Our classes include acting, beauty, business ethics and runway. The development of our talent is a priority not only to better them, but to broaden their horizons."
+  }
 };
 
 export default data;
