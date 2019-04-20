@@ -1,26 +1,65 @@
-section {
-  margin: 8rem 1rem;
-  padding: 0 0.5rem;
+.second {
+    margin: 8rem auto;
 
-  .founders {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .card {
-      height: 100%;
-      width: 100%;
-      box-sizing: border-box;
-      margin: 2rem auto;
-      border: none;
+    .founders {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-      .headShot {
-        height: 450px;
-        width: 350px;
-        object-fit: cover;
-      }
-      p {
-        font-weight: 100;
-      }
+        .card {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 2rem auto;
+            border: none;
+
+            @media only screen and (min-width: 900px) {
+                display: grid;
+                grid-template-columns: 1fr 1.3rem 1fr;
+                grid-gap: 1rem;
+            }
+
+            .text-container {
+                display: grid;
+                grid-template-rows: auto;
+
+
+                @media only screen and (min-width: 900px) {
+                    height: 60%;
+
+
+
+                }
+
+                @media only screen and (min-width: 1405px) {
+                    width: 80%;
+
+
+
+
+                }
+
+
+            }
+
+            .headShot {
+                height: 500px;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+
+                @media only screen and (min-width: 900px) {
+                    height: 80%;
+                    width: 70%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+            }
+
+            p {
+                font-weight: 100;
+            }
+        }
     }
-  }
 }

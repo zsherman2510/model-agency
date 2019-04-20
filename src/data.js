@@ -21,7 +21,7 @@ let data = {
       category: "Talent",
       title: "Photographer",
       img:
-        "https://actor.ly/wp-content/uploads/2018/06/Headshot_Krislian-Rodriguez.jpg"
+        "http://www.giantmanagement.com/wp-content/uploads/2018/03/Ariana_Thumbnail-1-650x813.jpg"
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ let data = {
       category: "Talent",
       title: "Personality",
       img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-WK28ZqG3qI6O4Vsv75U-cLhP8v5GYOe_NSibBU7xCJQ01FxbA"
+        "https://cdn.24.co.za/files/Cms/General/d/7466/7be80526d3d543a99d1bfafe0a5c33a2.png"
     },
     {
       id: 6,
@@ -82,8 +82,7 @@ let data = {
       name: "Caroline Cote",
       category: "Talent",
       title: "Stylist",
-      img:
-        "https://static1.squarespace.com/static/57065ff84d088e7900c2f3f0/57508f58d51cd46e0eb578e2/57508f5d356fb008a4e3e9ed/1464897792602/Ottawa-Headshot--7.jpg"
+      img: "https://www.models1.co.uk/images/women.jpg"
     },
     {
       id: 12,

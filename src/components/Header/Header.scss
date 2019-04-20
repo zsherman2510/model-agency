@@ -1,40 +1,48 @@
-.header {
-  height: 100vh;
-  position: relative;
-  background: #eee;
-
-  .section {
+.section {
+    height: 100vh;
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    background: rgb(228, 184, 41);
+    ;
 
-    .background {
-      position: absolute;
-      left: auto;
-      top: 15;
-      display: flex;
-      height: 45%;
-      width: 35%;
-      min-width: 300px;
-      min-height: 420px;
-      justify-content: center;
-      background: #eee;
-      z-index: 1;
-      background-size: cover;
-      background-position: center center;
+
+
+}
+
+.header-img {
+    position: absolute;
+    background-color: rgba(27, 27, 27, 0.671);
+    top: 15%;
+    left: 20%;
+    object-fit: cover;
+    height: 65%;
+    width: 60%;
+
+    @media only screen and (min-width: 900px) {
+        width: 40%;
+        left: 30%;
     }
 
-    .title {
-      position: relative;
-      font-size: 4rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      z-index: 100;
-      color: rgb(228, 184, 41);
-      text-transform: uppercase;
+    @media only screen and (min-width: 1200px) {
+        height: 70%;
+        width: 40%;
+
     }
-  }
+}
+
+.hero-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    color: rgb(238, 238, 238);
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 5px;
+
+    @media only screen and (min-width: 900px) {
+        font-size: 7rem;
+    }
 }

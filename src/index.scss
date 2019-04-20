@@ -1,17 +1,28 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Rubik", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    margin: 1rem;
+}
+
+.upload-img {
+    background: url('https://www.adorama.com/alc/wp-content/uploads/2017/09/shutterstock_553161229.jpg');
+    background-position: center;
+    background-size: cover;
+
 }

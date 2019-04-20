@@ -1,13 +1,17 @@
 import React from "react";
 import "./Header.scss";
-import HeaderImg from "../imagecompressor/female-model2-min.jpg";
+import HeaderImg from "../imagecompressor/fashion-desktop-backgrounds-2.jpg";
 const Header = ({ data }) => {
   return (
     <>
-      <section className="header">
-        <div className="section">
-          <img className="background" src={HeaderImg} alt="header" />
-          <span className="title">Execute.</span>
+      <section className="section">
+        <div className="row">
+          <img
+            className="header-img"
+            src="http://farm7.static.flickr.com/6231/6329605630_841266ab01_o.jpg"
+            alt="model"
+          />
+          <span className="hero-text">HumanKind</span>
         </div>
       </section>
     </>
