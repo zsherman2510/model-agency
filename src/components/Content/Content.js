@@ -25,11 +25,24 @@ class Content extends Component {
   render() {
     return (
       <>
-        <div className="container mt-4">
+        <div className="container mt-5">
+          <div className="row justify-content-center d-md-none">
+            <ul className="nav ml-4">
+              <li className="nav-item">
+                <button className="nav-link border-0">Talent</button>
+              </li>
+              <li className="nav-item">
+                <button className="nav-link border-0">Photographers</button>
+              </li>
+              <li className="nav-item">
+                <button className="nav-link border-0">Models</button>
+              </li>
+            </ul>
+          </div>
           <div className="row">
-            <div className="container-fluid d-flex flex-wrap">
+            <div className="container-fluid d-flex flex-wrap justify-content-center align-items-center ml-4">
               {data.talent.map((item, index) => (
-                <div className="card col-md-6 border-0 p-4" key={index}>
+                <div className="card col-md-6 border-0 " key={index}>
                   <img className="img-fluid" src={item.img} alt="headshot" />
                   <h5 className="text-uppercase mt-3">{item.name}</h5>
                   <div className="card-text d-flex ">

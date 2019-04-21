@@ -4,7 +4,7 @@ import HeaderImg from "../imagecompressor/fashion-desktop-backgrounds-2.jpg";
 const Header = ({ data }) => {
   return (
     <>
-      <section className="section">
+      <section className="section bg-warning">
         <div className="row">
           <img
             className="header-img"

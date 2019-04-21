@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../Footer/Footer";
+
 import "../Agency/Agency.scss";
 
 const Workshops = ({ data }) => {
@@ -17,7 +17,6 @@ const Workshops = ({ data }) => {
           <p className="text-center">{data.workshops.bottomText}</p>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

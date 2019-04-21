@@ -5,9 +5,9 @@ const Header = ({ about }) => {
   return (
     <header className="container-fluid">
       <div className="row justify-content-center">
-        <div className="col-10 col-md-8 col-lg-6 back-drop" />
+        <div className="col-10 col-md-8 col-lg-6 back-drop bg-warning" />
       </div>
-      <div className="textbox">
+      <div className="textbox text-dark">
         <h3>
           {" "}
           <span className="font-italic">Execute</span> is a unique talent

@@ -4,7 +4,7 @@ export default class Join extends Component {
   render() {
     return (
       <>
-        <div className="jumbotron jumbotron-fluid">
+        <div className="jumbotron jumbotron-fluid bg-warning">
           <div className="container pt-5">
             <h1 className="text-uppercase text-center mb-4">
               Join the Execute Family
