@@ -16,9 +16,7 @@ export default class About extends Component {
   render() {
     return (
       <>
-        <div className="container">
-          <Header about={data} />
-        </div>
+        <Header about={data} />
 
         <div className="container col-md-10">
           <Founders id="Founders" data={data} />

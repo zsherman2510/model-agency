@@ -5,12 +5,12 @@ const Header = ({ about }) => {
   return (
     <header className="container-fluid">
       <div className="row justify-content-center">
-        <div className="col-10 col-md-8 col-lg-6 back-drop bg-warning" />
+        <div className="col-10 col-md-6 col-lg-3 back-drop" />
       </div>
-      <div className="textbox text-dark">
+      <div className="textbox">
         <h3>
           {" "}
-          <span className="font-italic">Execute</span> is a unique talent
+          <span className="font-italic">Humankind</span> is a unique talent
           representation agency
         </h3>
         <h3>
@@ -21,7 +21,7 @@ const Header = ({ about }) => {
         </h3>
         <h6 className="font-weight-light">
           Inclusiveness, diversity, purpose and authenticity are beliefs that
-          drive us to go beyond mere appearances. Based in California, Execute
+          drive us to go beyond mere appearances. Based in California, Humankind
           represents inspiring people.
         </h6>
       </div>

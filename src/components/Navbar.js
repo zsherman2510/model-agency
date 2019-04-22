@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="warning" className="">
+      <Navbar collapseOnSelect expand="lg" bg="transparent" className="">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"
