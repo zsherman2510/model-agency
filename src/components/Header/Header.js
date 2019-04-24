@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import HeaderImg from "../imagecompressor/fashion-desktop-backgrounds-2.jpg";
+
 const Header = ({ data }) => {
   return (
     <>

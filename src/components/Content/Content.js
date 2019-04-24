@@ -13,11 +13,35 @@ class Content extends Component {
     };
   }
 
+  filterAll = () => {
+    this.setState({
+      Talent: data.talent
+    });
+    console.log(this.state);
+  };
   filterPhotographers = () => {
     this.setState({
       Photographers: (data.talent.title = "photographers")
     });
-    console.log(this.state.Photographers);
+    console.log(this.state);
+  };
+  filterStylist = () => {
+    this.setState({
+      Stylist: (data.talent.title = "stylist")
+    });
+    console.log("stylist");
+  };
+  filterModels = () => {
+    this.setState({
+      Models: (data.talent.title = "models")
+    });
+    console.log("models");
+  };
+  filterPersonality = () => {
+    this.setState({
+      Personality: (data.talent.title = "personality")
+    });
+    console.log("personality");
   };
 
   componentWillMount() {}
@@ -25,6 +49,61 @@ class Content extends Component {
   render() {
     return (
       <>
+        <div className="row">
+          <div className="">
+            <ul className="nav flex-column d-none d-md-block p-4 float-left">
+              <li className="nav-item">
+                <button
+                  value="Talent"
+                  className="nav-link text-secondary active border-0"
+                  onClick={this.filterAll}
+                >
+                  Talent
+                </button>
+              </li>
+              <li className="nav-item">
+                <button
+                  value="photographers"
+                  className="nav-link text-secondary border-0"
+                  href="#"
+                  onClick={this.filterPhotographers}
+                >
+                  Photographers
+                </button>
+              </li>
+              <li className="nav-item">
+                <button
+                  value="stylist"
+                  className="nav-link text-secondary border-0"
+                  href="#"
+                  onClick={this.filterStylist}
+                >
+                  Stylist
+                </button>
+              </li>
+              <li className="nav-item">
+                <button
+                  value="models"
+                  className="nav-link text-secondary border-0"
+                  href="#"
+                  onClick={this.filterModels}
+                >
+                  Models
+                </button>
+              </li>
+              <li className="nav-item">
+                <button
+                  value="personality"
+                  className="nav-link text-secondary border-0"
+                  href="#"
+                  onClick={this.filterPersonality}
+                >
+                  Personality
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div className="container mt-5">
           <div className="row justify-content-center d-md-none">
             <ul className="nav ml-4">
@@ -42,7 +121,7 @@ class Content extends Component {
           <div className="row">
             <div className="container-fluid d-flex flex-wrap justify-content-center align-items-center ml-4">
               {data.talent.map((item, index) => (
-                <div className="card col-md-6 border-0 " key={index}>
+                <div className="card col-md-6 border-0" key={index}>
                   <img className="img-fluid" src={item.img} alt="headshot" />
                   <h5 className="text-uppercase mt-3">{item.name}</h5>
                   <div className="card-text d-flex ">
