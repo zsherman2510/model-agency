@@ -9,39 +9,80 @@ class Content extends Component {
       Photographers: [],
       Stylist: [],
       Models: [],
-      Personality: []
+      Personality: [],
+      currCategory: ""
     };
   }
 
   filterAll = () => {
     this.setState({
-      Talent: data.talent
+      currCategory: ""
+      // Talent: data.talent
     });
     console.log(this.state);
   };
   filterPhotographers = () => {
     this.setState({
-      Photographers: (data.talent.title = "photographers")
+      currCategory: "photographer"
+      // Photographers: (data.talent.title = "photographers")
     });
     console.log(this.state);
   };
   filterStylist = () => {
     this.setState({
-      Stylist: (data.talent.title = "stylist")
+      currCategory: "stylist"
+      // Stylist: (data.talent.title = "stylist")
     });
     console.log("stylist");
   };
   filterModels = () => {
     this.setState({
-      Models: (data.talent.title = "models")
+      currCategory: "Model"
+      // Models: (data.talent.title = "models")
     });
     console.log("models");
   };
   filterPersonality = () => {
     this.setState({
-      Personality: (data.talent.title = "personality")
+      currCategory: "personality"
+      // Personality: (data.talent.title = "personality")
     });
     console.log("personality");
+  };
+
+  renderPeople = () => {
+    const { currCategory, Talent } = this.state;
+    const filteredPeople = Talent.talent.filter(
+      a => a.title.toLowerCase() === currCategory.toLowerCase()
+    );
+
+    if (filteredPeople.length > 0) {
+      return filteredPeople.map((item, index) => (
+        <div className="card col-md-6 border-0" key={index}>
+          <img className="img-fluid" src={item.img} alt="headshot" />
+          <h5 className="text-uppercase mt-3">{item.name}</h5>
+          <div className="card-text d-flex ">
+            <p className="category text-uppercase font-weight-bold mr-2">
+              {item.category}
+            </p>
+            <p className="title text-uppercase">{item.title}</p>
+          </div>
+        </div>
+      ));
+    } else {
+      return data.talent.map((item, index) => (
+        <div className="card col-md-6 border-0" key={index}>
+          <img className="img-fluid" src={item.img} alt="headshot" />
+          <h5 className="text-uppercase mt-3">{item.name}</h5>
+          <div className="card-text d-flex ">
+            <p className="category text-uppercase font-weight-bold mr-2">
+              {item.category}
+            </p>
+            <p className="title text-uppercase">{item.title}</p>
+          </div>
+        </div>
+      ));
+    }
   };
 
   componentWillMount() {}
@@ -83,7 +124,7 @@ class Content extends Component {
               </li>
               <li className="nav-item">
                 <button
-                  value="models"
+                  value="Model"
                   className="nav-link text-secondary border-0"
                   href="#"
                   onClick={this.filterModels}
@@ -120,18 +161,7 @@ class Content extends Component {
           </div>
           <div className="row">
             <div className="container-fluid d-flex flex-wrap justify-content-center align-items-center ml-4">
-              {data.talent.map((item, index) => (
-                <div className="card col-md-6 border-0" key={index}>
-                  <img className="img-fluid" src={item.img} alt="headshot" />
-                  <h5 className="text-uppercase mt-3">{item.name}</h5>
-                  <div className="card-text d-flex ">
-                    <p className="category text-uppercase font-weight-bold mr-2">
-                      {item.category}
-                    </p>
-                    <p className="title text-uppercase">{item.title}</p>
-                  </div>
-                </div>
-              ))}
+              {this.renderPeople()}
             </div>
           </div>
         </div>
