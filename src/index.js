@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navigation from "./components/Navbar";
+import Footer from "./components/Footer/Footer";
 import About from "./pages/About";
 import App from "./pages/App";
 import Join from "./pages/Join";
@@ -19,6 +20,7 @@ const Root = () => (
         <Route component={Models} path="/models" />
         <Route component={Join} path="/join" />
       </Switch>
+      <Footer />
     </React.Fragment>
   </Router>
 );

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Header from "../components/Header/Header";
 import Content from "../components/Content/Content";
-import Footer from "../components/Footer/Footer";
 
 import data from "../data";
 class App extends Component {
@@ -19,8 +18,6 @@ class App extends Component {
         <div className="d-flex">
           <Content data={data} />
         </div>
-
-        <Footer data={data} />
       </>
     );
   }

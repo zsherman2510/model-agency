@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Content.scss";
 import data from "../../data";
+import Fade from "react-reveal/Fade";
 class Content extends Component {
   constructor() {
     super();
@@ -58,29 +59,33 @@ class Content extends Component {
 
     if (filteredPeople.length > 0) {
       return filteredPeople.map((item, index) => (
-        <div className="card col-md-6 border-0" key={index}>
-          <img className="img-fluid" src={item.img} alt="headshot" />
-          <h5 className="text-uppercase mt-3">{item.name}</h5>
-          <div className="card-text d-flex ">
-            <p className="category text-uppercase font-weight-bold mr-2">
-              {item.category}
-            </p>
-            <p className="title text-uppercase">{item.title}</p>
+        <Fade>
+          <div className="card col-md-6 border-0" key={index}>
+            <img className="img-fluid" src={item.img} alt="headshot" />
+            <h5 className="text-uppercase mt-3">{item.name}</h5>
+            <div className="card-text d-flex ">
+              <p className="category text-uppercase font-weight-bold mr-2">
+                {item.category}
+              </p>
+              <p className="title text-uppercase">{item.title}</p>
+            </div>
           </div>
-        </div>
+        </Fade>
       ));
     } else {
       return data.talent.map((item, index) => (
-        <div className="card col-md-6 border-0" key={index}>
-          <img className="img-fluid" src={item.img} alt="headshot" />
-          <h5 className="text-uppercase mt-3">{item.name}</h5>
-          <div className="card-text d-flex ">
-            <p className="category text-uppercase font-weight-bold mr-2">
-              {item.category}
-            </p>
-            <p className="title text-uppercase">{item.title}</p>
+        <Fade>
+          <div className="card col-md-6 border-0" key={index}>
+            <img className="img-fluid" src={item.img} alt="headshot" />
+            <h5 className="text-uppercase mt-3">{item.name}</h5>
+            <div className="card-text d-flex ">
+              <p className="category text-uppercase font-weight-bold mr-2">
+                {item.category}
+              </p>
+              <p className="title text-uppercase">{item.title}</p>
+            </div>
           </div>
-        </div>
+        </Fade>
       ));
     }
   };
@@ -149,13 +154,25 @@ class Content extends Component {
           <div className="row justify-content-center d-md-none">
             <ul className="nav ml-4">
               <li className="nav-item">
-                <button className="nav-link border-0">Talent</button>
+                <button className="nav-link border-0" onClick={this.filterAll}>
+                  Talent
+                </button>
               </li>
               <li className="nav-item">
-                <button className="nav-link border-0">Photographers</button>
+                <button
+                  className="nav-link border-0"
+                  onClick={this.filterPhotographers}
+                >
+                  Photographers
+                </button>
               </li>
               <li className="nav-item">
-                <button className="nav-link border-0">Models</button>
+                <button
+                  className="nav-link border-0"
+                  onClick={this.filterModels}
+                >
+                  Models
+                </button>
               </li>
             </ul>
           </div>

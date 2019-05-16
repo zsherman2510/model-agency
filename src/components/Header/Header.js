@@ -1,19 +1,18 @@
 import React from "react";
 import "./Header.scss";
-
+import Fade from "react-reveal/Fade";
 const Header = ({ data }) => {
   return (
     <>
-      <section className="section bg-warning">
-        <div className="row">
-          <img
-            className="header-img"
-            src="http://farm7.static.flickr.com/6231/6329605630_841266ab01_o.jpg"
-            alt="model"
-          />
-          <span className="hero-text">HumanKind</span>
-        </div>
-      </section>
+      <Fade left>
+        <section className="section bg-warning">
+          <div className="row">
+            <div className="header-img" />
+
+            <span className="hero-text">HumanKind</span>
+          </div>
+        </section>
+      </Fade>
     </>
   );
 };

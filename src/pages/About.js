@@ -6,7 +6,7 @@ import Agency from "../components/About/Agency/Agency";
 import Nutrition from "../components/About/Nutrition/Nutrition";
 import Mentorship from "../components/About/Mentorship/Mentorship";
 import Workshops from "../components/About/Workshops/Workshops";
-import Footer from "../components/Footer/Footer";
+
 import "../index.scss";
 export default class About extends Component {
   constructor(props) {
@@ -25,7 +25,6 @@ export default class About extends Component {
           <Mentorship id="Mentorship" data={data} />
           <Workshops id="Workshops" data={data} />
         </div>
-        <Footer />
       </>
     );
   }
